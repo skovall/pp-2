@@ -1,4 +1,15 @@
 #include <iostream>
+#include <string>
+
+void logMessage(const std::string& msg) {
+    std::ofstream log("log.txt", std::ios::app);
+    log << msg << std::endl;
+}
+
+void loadConfig() {
+    std::string config = "config.txt";
+    std::cout << "Загрузка конфигурации из " << config << std::endl;
+}
 
 int add(int a, int b) {
     return a + b;
@@ -18,4 +29,3 @@ int main() {
     
     return 0;
 }
-
