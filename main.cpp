@@ -12,3 +12,9 @@ int main() {
     
     return 0;
 }
+
+int multiply(int a, int b) {
+    return a * b;
+}
+
+std::cout << "5 * 3 = " << multiply(5, 3) << std::endl;
